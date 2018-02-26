@@ -1,3 +1,5 @@
+//Boilerplate code from the angular documentation
+
 {
   "compilerOptions": {
     "target": "es5",
