@@ -1,4 +1,4 @@
-//Thhis is just importing angular itself
+//This is just importing angular itself
 
 // Angular 5
 import "@angular/platform-browser";

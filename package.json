@@ -29,7 +29,7 @@
     "zone.js": "^0.8.18"
   },
 
-   //devDependencies is a list of tools that we will use
+
   "devDependencies": {
     "@types/node": "^8.0.47",
     "awesome-typescript-loader": "^3.3.0",
