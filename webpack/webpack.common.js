@@ -1,15 +1,15 @@
 var webpack = require("webpack");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var helpers = require("./helpers");
+let helpers = require("./helpers");
 
 module.exports = {
 	//entry points are processed in the order in which they appear. Add any more js you need here
 	//webpack keeps going through all polyfills until they are resolved, then moves on to vendor etc etc
+	//main.css is the start of our angular codes
 	entry: {
 		"polyfills": helpers.root("src") + "/polyfills.ts",
 		"vendor": helpers.root("src") + "/vendor.ts",
-		//main.css is the start of our angular codes
 		"app": helpers.root("src") + "/main.ts",
 		"css": helpers.root("src") + "/app.css"
 	},
