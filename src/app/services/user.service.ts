@@ -9,12 +9,15 @@ import {User} from "../classes/user";
 @Injectable()
 export class UserService {
 
+	//HttpClient is an injectable that we are putting into our class
+	//HttpClient is put into UserService. UserService then can inject this code into other angular components
 	constructor(protected http: HttpClient) {}
 
 	private userUrl = "https://jsonplaceholder.typicode.com/users/";
 	//jsonplaceholder is dev service with lots of classes we can use to develop applications
 
 	getAllUsers() : Observable<User[]> {
+		//line below is getting an array of Users from the url
 		return(this.http.get<User[]>(this.userUrl));
 	}
 }
